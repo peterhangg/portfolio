@@ -1,3 +1,5 @@
+@import "../../variables";
+
 .typewriter {
   height: 100vh;
   display: flex;
@@ -7,11 +9,14 @@
 }
 
 .typewriter h1 {
+  font-family: $shadow;
+  font-size: 3rem;
+  color: $light-red;
   overflow: hidden; 
-  border-right: .15em solid orange; 
+  border-right: .15em solid $light-red; 
   white-space: nowrap; 
   margin: 0 auto; 
-  letter-spacing: 0.05em; 
+  letter-spacing: 0.07em;
   animation: 
     typing 4s steps(40, end),
     blink-caret .75s step-end infinite;
@@ -26,5 +31,5 @@
 /* The typewriter cursor effect */
 @keyframes blink-caret {
   from, to { border-color: transparent }
-  50% { border-color: orange; }
+  50% { border-color: $light-red; }
 }
