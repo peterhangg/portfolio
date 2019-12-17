@@ -1,19 +1,40 @@
 @import "../../variables";
 
-.typewriter {
+.homeBackground {
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(270deg, $light-red, $light-orange, $light-teal, $light-blue);
+	background-size: 400% 400%;
+	animation: gradientBackground 15s ease infinite;
+}
+
+.introText {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.typewriter h1 {
+@keyframes gradientBackground {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.introText h1 {
   font-family: $shadow;
-  font-size: 3rem;
-  color: $light-red;
+  font-size: 3.5rem;
+  color: white;
   overflow: hidden; 
-  border-right: .15em solid $light-red; 
+  border-right: .15em solid white; 
   white-space: nowrap; 
   margin: 0 auto; 
   letter-spacing: 0.07em;

@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.scss';
-import Context from "./components/Context/Context";
+import Home from "./components/Home/Home";
 
 function App() {
   return (
     <div className="App">
-      <Context />
+      <Home />
     </div>
   );
 }
