@@ -5,42 +5,21 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(270deg, $light-red, $light-orange, $light-teal, $light-blue);
+  background: linear-gradient(270deg, $light-red, $light-yellow, $light-green, $light-orange);
 	background-size: 400% 400%;
 	animation: gradientBackground 15s ease infinite;
 }
 
-.introText {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
 @keyframes gradientBackground {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-
-.introText h1 {
-  font-family: $shadow;
-  font-size: 3.5rem;
-  color: white;
-  overflow: hidden; 
-  border-right: .15em solid white; 
-  white-space: nowrap; 
-  margin: 0 auto; 
-  letter-spacing: 0.07em;
-  animation: 
-    typing 4s steps(40, end),
-    blink-caret .75s step-end infinite;
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 /* The typing effect */
@@ -52,5 +31,35 @@
 /* The typewriter cursor effect */
 @keyframes blink-caret {
   from, to { border-color: transparent }
-  50% { border-color: $light-red; }
+  50% { border-color: $white; }
+}
+
+.introText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.introText h1 {
+  font-family: $shadow;
+  font-size: 3.5rem;
+  color: $white;
+  overflow: hidden; 
+  border-right: .15em solid $white; 
+  white-space: nowrap; 
+  margin: 0 auto; 
+  letter-spacing: 0.07em;
+  animation: 
+    typing 4s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+.introText a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  margin-top: 10px;
+  border: solid white;
+  border-radius: 5px;
 }
