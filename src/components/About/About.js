@@ -8,7 +8,7 @@ const currentLearning = ["redux", "mongoDB", "graphQL"];
 
 export default function About(props) {
   return (
-    <div  id="About">
+    <section  id="About">
       <h1 className="about-heading animated slideInLeft">ABOUT</h1>
       <p className="underline animated fadeInLeft delay-1s"></p>
       <div className="about-section">
@@ -23,13 +23,13 @@ export default function About(props) {
               <img key={index} className="stack-img" src={`../icons/${img}.png`} alt={`${img}`}/>
             ))} 
           </div>
-          <div>
+          <div className="tech-stack">
             <h2>Backend</h2>
             {backend.map((img, index) => (
               <img key={index} className="stack-img" src={`../icons/${img}.png`} alt={`${img}`}/>
             ))} 
           </div>
-          <div>
+          <div className="tech-stack">
             <h2>Current Learning</h2>
             {currentLearning.map((img, index) => (
               <img key={index} className="stack-img" src={`../icons/${img}.png`} alt={`${img}`}/>
@@ -37,6 +37,6 @@ export default function About(props) {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
