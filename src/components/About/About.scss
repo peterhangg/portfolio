@@ -1,19 +1,40 @@
 @import "../../variables";
 
+#About {
+  height: 100vh;
+}
+
+.underline {
+  border-bottom: solid $grey 5px;
+  width: 6rem;
+  text-align: center;
+  display: inline-block;
+  margin: auto;
+}
+
+#About h1{
+  font-family: $raleway;
+  color: $grey;
+  font-size: 3rem;
+  padding-top: 1em;
+  margin-bottom: 0;
+}
 .about-section {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  padding-top: 2em;
 }
 
 .about-info {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  flex-basis: 35%;
+  margin-right: 2em;
 }
 
 .about-info img {
@@ -28,43 +49,19 @@
 }
 
 .stack-img {
-  width: 150px;
-  height: 150px;
-  padding: 2px 5px;
+  width: 125px;
+  height: 125px;
+  padding: 2px 7px;
 }
 
-h1, h2 {
+about-section h1, h2 {
   font-family: $raleway;
   color: $grey;
 }
 
-@-webkit-keyframes slideInRight {
-  from {
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
-    visibility: visible;
-  }
-
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-@keyframes slideInRight {
-  from {
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
-    visibility: visible;
-  }
-
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-.slideInRight {
-  -webkit-animation-name: slideInRight;
-  animation-name: slideInRight;
+.skills-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
