@@ -1,8 +1,6 @@
-@import "../../variables";
-
 .card-container {
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
   width: 90%;
@@ -10,7 +8,11 @@
 }
 
 .card {
-  margin-top: 2em;
+  margin-top: 4em;
+}
+
+h5{
+  font-size: 1.5rem;
 }
 
 .card-img-top {

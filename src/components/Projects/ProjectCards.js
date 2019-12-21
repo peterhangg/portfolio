@@ -25,7 +25,7 @@ const projects = [
   },
   {
     title: "Tweeter",
-    discription: "Tweeter is a simple single-page Twitter clone. The app is built with HTML, CSS, Sass, JS, jQuery and AJAX on the frontend and Node and Express on the backend.",
+    discription: "Tweeter is a simple single-page Twitter clone. This app is built with HTML, CSS, JS, jQuery and AJAX on the frontend and Node and Express on the backend.",
     github: "https://github.com/peterhangg/tweeter",
     site: ""
   }
@@ -40,7 +40,7 @@ export default function ProjectCards() {
       <Card key={index} className="animated fadeInRight ">
         <Card.Img variant="top" src={`../projects/${project.title}.png`} />
         <Card.Body>
-          <Card.Title>{project.title}</Card.Title>
+          <h3>{project.title}</h3>
           <Card.Text>{project.discription}</Card.Text>
         </Card.Body>
         <Card.Footer>
