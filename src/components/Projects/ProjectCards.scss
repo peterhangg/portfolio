@@ -1,3 +1,18 @@
+@import "../../variables";
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+
 .card {
-  width: 20%;
+  margin-top: 2em;
+}
+
+.card-img-top {
+  height: 50%;
 }

@@ -8,14 +8,14 @@ const currentLearning = ["redux", "mongoDB", "graphQL"];
 
 export default function About(props) {
   return (
-    <section  id="About">
-      <h1 className="about-heading animated slideInLeft">ABOUT</h1>
+    <section id="About">
+      <h1 className="heading animated slideInLeft">ABOUT</h1>
       <p className="underline animated fadeInLeft delay-1s"></p>
       <div className="about-section">
-        <div className="about-info animated fadeInLeft">
+        <article className="about-info animated fadeInLeft">
           <img src="https://picsum.photos/id/237/300/300" alt="Peter Hang"/>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, veritatis aliquam consequuntur fuga unde error odit nulla illum debitis porro dolorem. Quam odio provident, quae nam asperiores aperiam iste dolorum?</p>
-        </div>
+        </article>
         <div className="skills-section animated fadeInRight">
           <div className="tech-stack">
             <h2>Frontend</h2>
