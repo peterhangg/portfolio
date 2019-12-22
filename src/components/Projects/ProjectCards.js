@@ -43,10 +43,13 @@ export default function ProjectCards() {
           <h3>{project.title}</h3>
           <Card.Text>{project.discription}</Card.Text>
         </Card.Body>
-        <Card.Footer>
-          <a href={project.github} target="_blank" rel="noopener noreferrer">Learn More</a>
-          <br/>
-          <a href={project.site} target="_blank" rel="noopener noreferrer">Live</a>
+        <Card.Footer style={{ padding: '0' }}>
+          <div className="card-link">
+            <a href={project.github} target="_blank" rel="noopener noreferrer">Learn More</a>
+          </div>
+          <div className="card-link">
+            <a href={project.site} target="_blank" rel="noopener noreferrer">Live</a>
+          </div>
         </Card.Footer>
       </Card>
       ))}

@@ -5,3 +5,30 @@ footer {
   color: white;
   padding: 3rem;
 }
+
+.icon-container {
+  margin-bottom: 2em;
+}
+
+.footer-icon:hover {
+  color: $magenta;
+}
+
+.footer-icon {
+  color: $white;
+}
+
+.icon {
+  text-decoration: none;
+  color: white;
+  padding: 0 1em;
+}
+
+.copyright-name {
+  font-size: 0.75em;
+  margin: auto;
+}
+
+.copyright {
+  color: $teal
+}
