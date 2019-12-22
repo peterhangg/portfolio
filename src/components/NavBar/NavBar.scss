@@ -1,0 +1,60 @@
+@import "../../variables";
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 7vh;
+  background-color: $black-navy;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  border-bottom: solid $teal 2px;
+  
+}
+
+.logo {
+  color: $white;
+  letter-spacing: 5px;
+  font-size: 2em;
+  margin-bottom: 0px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 40%;
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
+
+.nav-link li {
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: $teal;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.nav-links a:hover {
+  color: $magenta;
+}
+@media screen and (max-width:1024px) {
+  .nav-links{
+    width: 60%;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .nav-links{
+    width: 100%;
+  }
+  .logo {
+    display: none;
+  }
+}
