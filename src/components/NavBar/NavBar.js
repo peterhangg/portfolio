@@ -1,7 +1,16 @@
 import React from 'react'
 import "./NavBar.scss"
 
-export default function NavBar() {
+const handleClick = ref => {
+  window.scrollTo({
+    left: 0, 
+    top: ref.current.offsetTop,
+    behavior: 'smooth'
+  })
+}
+
+export default function NavBar(props) {
+
   return (
     <nav id="NavBar">
       <div className="logo">
@@ -9,16 +18,16 @@ export default function NavBar() {
       </div>
       <ul className="nav-links">
         <li>
-          <a href="#Home">HOME</a>
+          <a onClick={() => handleClick(props.homeRef)}>HOME</a>
         </li>
         <li>
-          <a href="#About">ABOUT</a>
+          <a onClick={() => handleClick(props.aboutRef)}>ABOUT</a>
         </li>
         <li>
-          <a href="#Projects">PROJECTS</a>
+          <a onClick={() => handleClick(props.projectsRef)}>PROJECTS</a>
         </li>
         <li>
-          <a href="#Contact">CONTACT</a>
+          <a onClick={() => handleClick(props.contactRef)}>CONTACT</a>
         </li>
       </ul>
     </nav>
