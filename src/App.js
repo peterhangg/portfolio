@@ -8,7 +8,7 @@ import NavBar from "./components/NavBar/NavBar";
 
 import './App.scss';
 
-function App() {
+export default function App() {
 
 // refs for DOM elements to scroll to
 const homeRef = useRef(null);
@@ -17,7 +17,7 @@ const aboutRef = useRef(null);
 const projectsRef = useRef(null);
 const contactRef = useRef(null);
 
-// fix nav-bar to top when scrolled to the bottom of Home
+// fix navbar to top when scrolled pass home section
 const [nav, setNav] = useState(false);
 
 useEffect(() => {
@@ -51,4 +51,3 @@ useEffect(() => {
   );
 }
 
-export default App;
