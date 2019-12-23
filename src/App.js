@@ -37,7 +37,7 @@ useEffect(() => {
       <div id='nav-bar' className={nav ? 'nav' : ''} ref={navRef}>
         {nav && <NavBar homeRef={homeRef} aboutRef={aboutRef} projectsRef={projectsRef} contactRef={contactRef}/>} 
       </div>
-      <div id='About' ref={aboutRef}>
+      <div id='about' ref={aboutRef}>
         <About />
       </div>
       <div id='projects' ref={projectsRef}>

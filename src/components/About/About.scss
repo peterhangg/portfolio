@@ -1,7 +1,17 @@
 @import "../../variables";
 
-#About {
-  height: 100vh;
+// #About {
+  // height: 100vh;
+  // display: flex;  
+  // flex-flow: row wrap;
+  // font-weight: bold;
+  // text-align: center;
+// }
+
+.about-header {
+  flex-basis: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 .underline {
@@ -21,11 +31,10 @@
 }
 .about-section {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  padding-top: 2em;
+  padding-top: 3em;
 }
 
 .about-info {
