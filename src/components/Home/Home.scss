@@ -22,40 +22,18 @@
   }
 }
 
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: $white; }
-}
-
-.introText {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.introText h1 {
+.introText:first-child {
+  color: $white;
+  font-size: 32px;
+  display: block;
+  margin-bottom: 0.5em;
   font-family: $shadow;
   font-size: 3.5rem;
-  color: $white;
-  overflow: hidden; 
-  border-right: .15em solid $white; 
-  white-space: nowrap; 
-  margin: 0 auto; 
   letter-spacing: 0.07em;
-  animation: 
-    typing 5s steps(40, end),
-    blink-caret .75s step-end infinite;
 }
 
-.introText a {
+.home-container a {
+  display: inline-block;
   color: white;
   text-decoration: none;
   padding: 10px;
@@ -65,7 +43,7 @@
   transition-duration: 0.4s;
 }
 
-.introText a:hover {
+.home-container a:hover {
   transform: scale(1.1) perspective(1px);
   transition-duration: 0.4s;
   text-decoration: none;
