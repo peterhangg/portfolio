@@ -1,20 +1,18 @@
 @import "../../variables";
 
 .card-container {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-  width: 90%;
+  width: 95%;
   margin: auto;
+  padding-bottom: 2em;
 }
 
 .card {
-  margin-top: 4em;
+  margin-top: 3em;
   overflow: hidden;
+  height: 100%;
 }
 
-h5{
+h5 {
   font-size: 1.5rem;
 }
 

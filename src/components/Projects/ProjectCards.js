@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, CardDeck } from 'react-bootstrap';
+import { Card, CardDeck, Col } from 'react-bootstrap';
 import "./ProjectCards.scss";
 import "../../animate.scss";
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -36,24 +36,26 @@ export default function ProjectCards() {
   return (
     <div className="card-container">
       <CardDeck>
-      {projects.map((project, index) => (
-      <Card key={index} className="animated fadeInRight ">
-        <Card.Img variant="top" src={`../projects/${project.title}.png`} />
-        <Card.Body>
-          <h3>{project.title}</h3>
-          <Card.Text>{project.discription}</Card.Text>
-        </Card.Body>
-        <Card.Footer style={{ padding: '0' }}>
-          <div className="card-link">
-            <a href={project.github} target="_blank" rel="noopener noreferrer">Learn More</a>
-          </div>
-          <div className="card-link">
-            <a href={project.site} target="_blank" rel="noopener noreferrer">Live</a>
-          </div>
-        </Card.Footer>
-      </Card>
-      ))}
-      </CardDeck>
+        {projects.map((project, index) => (
+          <Col xl={3} lg={6} md={6} sm={12}>
+            <Card key={index} className="animated fadeInRight">
+              <Card.Img variant="top" src={`../projects/${project.title}.png`} />
+              <Card.Body>
+                <h3>{project.title}</h3>
+                <Card.Text>{project.discription}</Card.Text>
+              </Card.Body>
+              <Card.Footer style={{ padding: '0' }}>
+                <div className="card-link">
+                  <a href={project.github} target="_blank" rel="noopener noreferrer">Learn More</a>
+                </div>
+                <div className="card-link">
+                  <a href={project.site} target="_blank" rel="noopener noreferrer">Live</a>
+                </div>
+              </Card.Footer>
+            </Card>
+          </Col>
+          ))}
+        </CardDeck>
     </div>
   )
 }
