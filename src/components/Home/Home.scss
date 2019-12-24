@@ -1,27 +1,5 @@
 @import "../../variables";
 
-.home-container {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(270deg, $magenta, $teal, $black-blue, $dark-grey);
-	background-size: 400% 400%;
-	animation: gradientBackground 15s ease infinite;
-}
-
-@keyframes gradientBackground {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
 .introText:first-child {
   color: $white;
   font-size: 32px;
@@ -32,7 +10,7 @@
   letter-spacing: 0.07em;
 }
 
-.home-container a {
+.intro a {
   display: inline-block;
   color: white;
   text-decoration: none;
@@ -43,7 +21,7 @@
   transition-duration: 0.4s;
 }
 
-.home-container a:hover {
+.intro a:hover {
   transform: scale(1.1) perspective(1px);
   transition-duration: 0.4s;
   text-decoration: none;

@@ -8,7 +8,7 @@ const currentLearning = ["redux", "mongoDB", "graphQL"];
 
 export default function About(props) {
   return (
-    <div id="About">
+    <>
       <div className="about-header">
         <h1 className="heading animated slideInLeft">ABOUT</h1>
         <p className="underline animated fadeInLeft delay-1s"></p>
@@ -38,6 +38,6 @@ export default function About(props) {
             ))} 
         </div>
       </div>
-    </div>
+    </>
   )
 }

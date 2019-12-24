@@ -14,14 +14,14 @@ const handleClick = ref => {
 
 export default function Home(props) {
   return (
-    <div className="home-container">
-      <div>
+    <>
+      <div className="intro">
         <Typed className="introText"
           strings={["Hi! I'm Peter Hang, and I'm a full-stack developer."]}
           typeSpeed={90}
         />
         <a href="#" onClick={() => handleClick(props.aboutRef)}>View my work</a>
       </div>
-    </div>
+    </>
   )
 }

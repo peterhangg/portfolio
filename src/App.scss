@@ -1,7 +1,42 @@
+@import "./_variables.scss";
+
 .App {
   text-align: center;
 }
 
-#about, #projects {
+#Home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(270deg, $magenta, $teal, $black-blue, $dark-grey);
+    background-size: 300% 300%;
+    animation: gradientBackground 15s ease infinite;
+}
+
+@keyframes gradientBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#About {
+  display: flex;  
+  flex-flow: row wrap;
   padding-bottom: 3em;
+}
+
+#Projects {
+  padding-bottom: 3em;
+}
+
+#Contact {
+  background-color: $dark-grey;
+  padding-bottom: 2rem;
 }

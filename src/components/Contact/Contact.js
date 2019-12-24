@@ -14,7 +14,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="Contact">
+    <>
       <h1 className="heading animated slideInLeft">CONTACT</h1>
       <p className="underline animated fadeInLeft delay-1s"></p>
       <p className="contact-question animated fadeInLeft delay-1s">Have a question?</p>
@@ -49,6 +49,6 @@ export default function Contact() {
           <input type="submit" value="Submit"/>
         </form>
       </div>
-    </section>
+    </>
   )
 }

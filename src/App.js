@@ -31,19 +31,19 @@ useEffect(() => {
 
   return (
     <div className="App">
-      <div id='home' ref={homeRef}>
+      <div id='Home' ref={homeRef}>
         <Home aboutRef={aboutRef} />
       </div>
       <div id='nav-bar' className={nav ? 'nav' : ''} ref={navRef}>
         {nav && <NavBar homeRef={homeRef} aboutRef={aboutRef} projectsRef={projectsRef} contactRef={contactRef}/>} 
       </div>
-      <div id='about' ref={aboutRef}>
+      <div id='About' ref={aboutRef}>
         <About />
       </div>
-      <div id='projects' ref={projectsRef}>
+      <div id='Projects' ref={projectsRef}>
         <Projects />
       </div>
-      <div id='contact' ref={contactRef}>
+      <div id='Contact' ref={contactRef}>
         <Contact />
       </div>
       <Footer />
