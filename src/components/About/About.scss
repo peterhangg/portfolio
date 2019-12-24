@@ -9,6 +9,7 @@
   width: 100%;
   justify-content: center;
   align-items: center;
+  margin-bottom: 2em;
 }
 
 .underline {
@@ -46,7 +47,7 @@
 }
 
 .tech-stack {
-  padding-bottom: 2em;
+  padding-bottom: 3em;
 }
 
 .stack-img {
@@ -68,9 +69,14 @@ about-section h1, h2 {
   flex-grow: 1;
 }
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1458px) {
   .about-info {
-    width: 100%
+    width: 100%;
+    margin-bottom: 2em;
+  }
+
+  .about-info p {
+    width: 65%;
   }
 
   .stack-img {
@@ -79,3 +85,8 @@ about-section h1, h2 {
   }
 }
 
+@media screen and (max-width:992px) {
+  .about-info p {
+    width: 80%;
+  }
+}

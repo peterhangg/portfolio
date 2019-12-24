@@ -13,9 +13,6 @@ export default function NavBar(props) {
 
   return (
     <nav id="NavBar">
-      <div className="logo">
-          <h4>Peter Hang</h4>
-      </div>
       <ul className="nav-links">
         <li>
           <a onClick={() => handleClick(props.homeRef)}>HOME</a>

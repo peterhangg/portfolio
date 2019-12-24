@@ -36,7 +36,7 @@ export default function ProjectCards() {
     <div className="card-container">
       <CardDeck>
         {projects.map((project, index) => (
-          <Col key={index} xl={3} lg={6} md={6} sm={12}>
+          <Col key={index} sm={12} md={6} lg={6} xl={3}>
             <Card key={index} className="animated fadeInRight">
               <Card.Img variant="top" src={`../projects/${project.title}.png`} />
               <Card.Body>

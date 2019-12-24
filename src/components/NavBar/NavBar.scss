@@ -14,12 +14,12 @@ nav {
   
 }
 
-.logo {
-  color: $white;
-  letter-spacing: 5px;
-  font-size: 2em;
-  margin-bottom: 0px;
-}
+// .logo {
+//   color: $white;
+//   letter-spacing: 5px;
+//   font-size: 2em;
+//   margin-bottom: 0px;
+// }
 
 .nav-links {
   display: flex;
@@ -36,7 +36,7 @@ nav {
 
 .nav-links a {
   text-decoration: none;
-  color: $teal;
+  color: $white;
   font-weight: bold;
   letter-spacing: 3px;
 }
@@ -56,5 +56,11 @@ nav {
   }
   .logo {
     display: none;
+  }
+}
+
+@media only screen and (max-width : 361px) {
+  .nav-links a {
+    font-size: 12px;
   }
 }
