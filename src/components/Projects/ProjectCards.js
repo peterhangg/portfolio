@@ -29,7 +29,6 @@ const projects = [
     github: "https://github.com/peterhangg/tweeter",
     site: ""
   }
-
 ];
 
 export default function ProjectCards() {
